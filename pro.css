@@ -1,0 +1,195 @@
+h1 {
+Color:red;
+text-align: center;
+}
+.title {
+    color: green;
+}
+
+#italic {
+    color: orange;
+}
+
+.container { 
+    border: 10px dashed aqua;
+    margin:50px 5px 25px 0px;
+    padding: 2%;
+    padding-left: 5px;
+}
+
+.box {
+    justify-content: center;
+    background: blue;
+    height: 200px;
+    width: 200px;
+    margin: 2%;
+    padding: 2%;
+}
+
+nav {
+    background-color: aquamarine;
+    text-align: center;
+}
+
+a {
+    text-decoration-line: none;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 3%;
+}
+img {
+    box-shadow: 5px 5px 1px rgba(11, 53, 53, 0.555);
+}
+.im {
+    border-radius: 5%;   
+}
+.Flex {
+    border: 3px solid black;
+    margin: 30px;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@keyframes FadeMe{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }   
+}
+#box1 {
+    animation: FadeMe 4s  infinite linear;
+}
+
+@keyframes Rotation{
+    0% {transform: rotate(90deg);}
+    50% {transform: rotate(180deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#box2 {
+    animation: Rotation 5s infinite ease-in-out;
+    border-radius: 10%;
+    background-image: radial-gradient(circle,purple ,orange ,yellow, purple );
+}
+ @keyframes GetBigger{
+     0% { transform: scale(1);}
+     50% { transform: scale(1.2);}
+     100% { transform: scale(1);}
+ }
+  #box3 {
+      animation: GetBigger 5s infinite ease-in-out;
+      border-radius: 50%;
+      background-image:linear-gradient(red,yellow ,green,blue) ;
+  }
+  @keyframes ChangeColour {
+      0%{background-color: aqua;}
+      25%{background-color:red;}
+      50%{background-color: rgb(47, 0, 255);}
+       }
+
+    #box4 {animation: ChangeColour 3s infinite ease-in-out;}
+
+    @keyframes MoveObject{
+        0% {left: 0px; top:0px;}
+        25% {left: 100px; top: 0px;}
+        50%{left: 100px; top: 200px;}
+        75%{left: 0px; top: 0px;}
+        100%{left: 0px; top: 0px;}
+    }
+    #box5 {
+        position: relative;
+        background: red;
+        animation: MoveObject 5s infinite;
+    }
+    #box6 {
+        top: 10px;
+        left: 20px;
+        position: relative;
+    }
+
+form ,input,textarea,button {
+    display: block;
+    margin: 30px;
+    
+}
+.nav-wrapper {
+    background-color:rgb(40, 30, 180);
+}
+.contact-box {
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    margin: 10px;
+}
+
+.input-field {
+    margin: 10px;
+}
+
+
+
+
+
+
+.wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: repeat(5, [col] 20% ) ;
+        grid-template-rows: repeat(3, [row] auto  );
+        background-color: #fff;
+        color: #444;
+    }
+
+    .Box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        z-index:10;
+
+    }
+
+    .a {
+        grid-column: col / span  2;
+        grid-row: row ;
+        justify-content: center;
+    }
+    .b {
+        grid-column: col 4 / span  2 ;
+        grid-row: row ;
+        justify-content: center;
+    }
+    .c {
+        grid-column: col / span 5 ;
+        grid-row: row 2 ;
+        justify-content: center;
+    }
+    .d {
+        grid-column: col 2 / span 1;
+        grid-row: row 3 ;
+        justify-content: center;
+    }
+
+    .e {
+        grid-column: col 4 / span  1;
+        grid-row: row 3;
+        justify-content: center;
+    }
+
+    .f {
+        grid-column: col 2 / span 3;
+        grid-row: row 2  ;
+        background-color: rgba(49,121,207, 0.5);
+        z-index: 20;
+        justify-content: center;
+    }
+
